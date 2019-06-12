@@ -3,8 +3,8 @@ import React from 'react';
 const Header = (props) => (
 	<header className="top">
 		<h1>Catch
-			<span class="ofThe">
-			<span class="of">Of</span>
+			<span className="ofThe">
+			<span className="of">Of</span>
 			The
 			</span>
 			Day</h1>
