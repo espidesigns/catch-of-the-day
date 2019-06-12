@@ -316,12 +316,12 @@ header.top h3:after {
   width: 130%;
   height: 1px;
   content: '';
-  top: 5px;
+  top: 13px;
   margin-left: -15%;
 }
 header.top h3:after {
   top: auto;
-  bottom: 7px;
+  bottom: 13px;
 }
 .catch-of-the-day {
   display: -webkit-box;
