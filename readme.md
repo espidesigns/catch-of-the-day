@@ -1,11 +1,3 @@
-![](https://wes.io/dgAQ/content)
-
-# React For Beginners — [ReactForBeginners.com](https://ReactForBeginners.com)
-
-Starter files for the React For Beginners course. Come <a href="https://ReactForBeginners.com/">Learn React</a> with me!
-
-The code in this repo meant to be a reference point for anyone following along with the video course.
-
 ## To Start
 
 **Note** - One of the dependencies is Xcode. While installing, if you run into an error that says, `gyp: No Xcode or CLT version detected!` please do the following:
