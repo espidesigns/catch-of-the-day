@@ -30,9 +30,22 @@ class Order extends React.Component {
 				timeout={{enter: 250, exit: 250}}
 			>
 				<li key={key}>
-					{count} lbs {fish.name}
-					{formatPrice(count * fish.price)}
-					<button onClick={() => this.props.removeFromOrder(key)}>&times;</button>
+					<span>
+						<TransitionGroup component="span" className="count">
+							<CSSTransition
+								classNames="count"
+								key={count}
+								timeout={{enter: 500, exit: 500}}
+							>
+								<span>{count}</span>
+							</CSSTransition>
+						</TransitionGroup>
+						lbs {fish.name}
+						{formatPrice(count * fish.price)}
+						<button onClick={() => this.props.removeFromOrder(key)}>
+							&times;
+						</button>
+					</span>
 				</li>
 			</CSSTransition>
 		);
