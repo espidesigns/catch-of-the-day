@@ -4,7 +4,7 @@ import firebase from 'firebase';
 import AddFishForm from './AddFishForm';
 import EditFishForm from './EditFishForm';
 import Login from './Login';
-import {firebaseApp} from '../base';
+import base, {firebaseApp} from '../base';
 
 
 console.log(firebaseApp);
@@ -19,7 +19,8 @@ class Inventory extends React.Component {
 
 	authHandler = async (authData) => {
 		// 1. Look up the current store in the firebase database
-
+		const store = await base.fetch(this.props.storeid, context: {this});
+		console.log(store);
 		// 2. Claim it if there is no owner
 		// 3. Set the state of the inventory component to reflect the current user
 		//
