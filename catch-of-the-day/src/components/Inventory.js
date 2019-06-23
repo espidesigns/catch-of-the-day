@@ -14,6 +14,11 @@ class Inventory extends React.Component {
 		updateFish: PropTypes.func,
 		deleteFish: PropTypes.func,
 		loadSampleFishes: PropTypes.func,
+	};
+
+	state = {
+		uid: null,
+		owner: null,
 	}
 
 	authHandler = async authData => {
@@ -29,7 +34,10 @@ class Inventory extends React.Component {
 		}
 		// 3. Set the state of the inventory component to reflect the current user
 		//
-		console.log(authData);
+		this.setState({
+			uid: authData.user.uid,
+			owner: store.owner || authData.user.uid,
+		});
 	};
 
 	authenticate = provider => {
